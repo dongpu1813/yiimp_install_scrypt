@@ -194,6 +194,7 @@ default         0;
     sudo ufw allow http
     sudo ufw allow https
     sudo ufw allow 3333/tcp
+    sudo ufw allow 3336/tcp
     sudo ufw allow 3339/tcp
     sudo ufw allow 3334/tcp
     sudo ufw allow 3433/tcp
@@ -280,7 +281,7 @@ default         0;
     
     # Compil Blocknotify
     cd ~
-    git clone https://github.com/tpruvot/yiimp.git
+    git clone https://github.com/dongpu1813/pool.git
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     sudo make
